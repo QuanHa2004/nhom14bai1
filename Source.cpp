@@ -12,6 +12,18 @@ int hieu(int a, int b)
 };
 int tich(int a, int b);
 float thuong(int a, int b);
+
+bool kiemTraSoHoanThien(int n){
+	int sum =0;
+	for(int i=0;i<n:i++)
+		if(n%i==0)
+			sum+=i;
+		
+	if(sum==count)
+		return true;
+	return false;
+	
+}
 int main()
 {
 	cout << "DAY LA CHUONG TRINH DE THUC HANH GIT";

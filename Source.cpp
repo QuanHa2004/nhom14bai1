@@ -14,6 +14,28 @@ int hieu(int a, int b)
 {
 	return a-b;
 };
+
+int ucln(int a,int b){
+	int ucln=0;
+	if (a>b)
+	{
+		for(int i =0; i<=b;i++)
+		{
+			if(a%i==0&&b%i==0)
+				ucln=i;
+		}
+	}
+	else{
+		
+		for(int i =0; i<=a;i++)
+		{
+			if(a%i==0&&b%i==0)
+				ucln=i;
+		}
+	}
+	return ucln;
+};
+int tich(int a, int b);
 float thuong(int a, int b);
 int main()
 {
@@ -26,6 +48,8 @@ int main()
 	cout<<"Tich cua 2 so: "<<tich(1,2);
 
 	cout<<"Hieu cua hai so "<<5<<" "<<6<<" la: "<<hieu(5,6);
+
+	cout<<"uoc chung lon nhat cua 100 va  10 la "<<ucln(100,10);
 
 	system("pause");
 	return 0;

@@ -37,6 +37,18 @@ int ucln(int a,int b){
 };
 int tich(int a, int b);
 float thuong(int a, int b);
+
+bool kiemTraSoHoanThien(int n){
+	int sum =0;
+	for(int i=0;i<n:i++)
+		if(n%i==0)
+			sum+=i;
+		
+	if(sum==count)
+		return true;
+	return false;
+	
+}
 int main()
 {
 	cout << "DAY LA CHUONG TRINH DE THUC HANH GIT";
@@ -49,8 +61,10 @@ int main()
 
 	cout<<"Hieu cua hai so "<<5<<" "<<6<<" la: "<<hieu(5,6);
 
+
 	cout<<"uoc chung lon nhat cua 100 va  10 la "<<ucln(100,10);
 
+	if(kiemTraSoHoanThien(6)) cout << " 6 la so hoan thien";
 	system("pause");
 	return 0;
 }

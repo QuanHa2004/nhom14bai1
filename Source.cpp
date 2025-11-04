@@ -32,6 +32,7 @@ int main()
 
 	cout<<"Tong =";
 	cout<<"Hieu cua hai so "<<5<<" "<<6<<" la: "<<hieu(5,6);
+	if(kiemTraSoHoanThien(6)) cout << " 6 la so hoan thien";
 	system("pause");
 	return 0;
 }
